@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.google.com/specimen/Montserrat?preview.size=39&query=mont" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="box">
+            <h1><img src="icon-lyster.jpg"></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main>
+            <form>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" class="default-input" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="default-input" required
+                placeholder="youremail@domain.com">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" class="default-input" required
+                placeholder="(xx)xxxxxxxx">
+
+                <label for="message">Message:</label>
+                <textarea cols="70" rows="10" id="message" class="default-input" required></textarea>
+
+                <fieldset class="typecontact">
+                    <legend>How would you like to be contacted?</legend>
+                    <label for="radio-email"><input type="radio" value="email" name="typecontact" id="radio-email">Email</label>
+                    <label for="radio-phone"><input type="radio" value="phone" name="typecontact" id="radio-phone">Phone Call</label>
+                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="typecontact" id="radio-whatsapp">Whatsapp</label>
+                </fieldset>
+
+                <fieldset class="contact-time">
+                    <legend>What time would you like to be contacted?</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+                </fieldset>
+
+                
+                    <label class="checkbox"><input type="checkbox" checked>Would you like to subscribe to our newsletter?</label>
+
+                    <input type="submit" value="Send form" class="send">
+
+                    <legend class="table">Business Hours:</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>8h-20h</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>8h-20h</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>8h-20h</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <td colspan="2">Excl Public Holidays</td>
+                        </tfoot>
+                    </table>
+                
+
+            </form>
+        </main>
+
+    <footer>
+        <img src="icon-lyster.jpg">
+        <p class="copyright">&copy; Nagal's Masssage</p>
+    </footer>
+
+</body>
+</html>
